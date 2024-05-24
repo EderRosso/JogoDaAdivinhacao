@@ -1,9 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package jogodaadivinhacao;
+
+import java.util.Random;
 
 /**
  *
@@ -11,11 +9,10 @@ package jogodaadivinhacao;
  */
 public class JogoDaAdivinhacao {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Random random = new Random(); // novo objeto random
+        int numeroSecreto = random.nextInt(10) + 1; //Gera números entre 1 e 10 
+        System.out.println(numeroSecreto);// Mostra o numeroSecreto
     }
     
 }
